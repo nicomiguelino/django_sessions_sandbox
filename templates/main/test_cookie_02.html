@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Test Cookie 2 {% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Test Cookie #2</h1>
+
+{% if cookie_status %}
+    <p>cookie_status &mdash; {{ cookie_status }}</p>
+{% else %}
+    <p>No test cookies present!</p>
+{% endif %}
+{% endblock %}
