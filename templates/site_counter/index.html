@@ -3,10 +3,8 @@
 {% block title %} Site Counter {% endblock %}
 
 {% block content %}
-<h1 class="mb-4">Site Counter</h1>
+<h1 class="mb-4">Site Counter Using Sessions</h1>
 
-<h2 class="mb-3 mt-4">Using Cookies</h2>
-
-<p>visits &mdash; {{ request.COOKIES.visits }}</p>
-<p>last_visit &mdash; {{ request.COOKIES.last_visit }}</p>
+<p>visits &mdash; {{ request.session.visits }}</p>
+<p>last_visit &mdash; {{ request.session.last_visit }}</p>
 {% endblock %}
